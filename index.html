@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            background-color: #102937;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>Tiketin aja</title>
+    </head> 
+    <body>
+        <div class="logo">
+            <center>
+            <img src="pesawatv.png">
+            </center>
+            <style>
+                .logo {
+                    position:absolute; 
+                    transform:scaleX(-1);  
+                    width: 100px; 
+                    height:auto;
+                    bottom: 0
+                    left: 0; 
+                    margin:auto;
+                    rotate: 150deg;
+                    animation-name: diag;
+                    animation-duration: 8s;
+                    animation-timing-function: ease-in;
+                }
+
+                @keyframes diag {
+                    0% {
+                        transform: translateX(0) translateY(350px);
+                    }
+                    
+                    100% {
+                        transform: translateX(350px) translateY(0);
+                    }
+                }
+            </style>
+        </div>
+        <div class="Nyari" style="align-content: center;">
+            <form class="sbarx" action="masuk.html">
+                    </div>
+                    <input class="sbar1" role="combobox" type="text" placeholder="Asal" autocomplete="off" name="p">
+                    </div>
+                    <input class="sbar2" role="combobox" type="text" placeholder="Tujuan" autocomplete="off" name="q"> 
+                </div>
+                <input class="sbar3" type="submit" value>
+            </form>
+            <style>
+                
+
+                .sbarx {
+                    position: relative;
+                    display: block;
+                    margin-top: 250px;
+                    margin-left: 20px;
+                    margin left: 20px;
+                    padding: 0 16px;
+                }
+                .sbar1 {
+                    display: flex;
+                    min-height: 44px;
+                    background: white;   
+                    border: 1px solid white;
+                    border-radius: 24px;
+                    box-shadow: 10px 10px 8px #091d26;
+                    margin-top: auto;  
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: auto;
+                    width: 600px;
+                    max-width: 530px;
+                    padding: 5px;
+                    font-size: 18px;
+                    padding-inline-start: 20px;
+                }
+
+                .sbar1::-webkit-input-placeholder{
+                    color: #102937;
+                }
+                
+                .sbar2 {
+                    display: flex;
+                    min-height: 44px;
+                    background: white;
+                    border: 1px solid white;
+                    border-radius: 24px;
+                    box-shadow: 10px 10px 8px #091d26;
+                    margin-top: 40px;  
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: auto;
+                    width: 600px;
+                    max-width: 530px;
+                    padding: 5px;
+                    font-size: 18px;
+                    padding-inline-start: 20px;
+                }
+
+                .sbar2::-webkit-input-placeholder{
+                    color: #102937;
+                }
+                
+                 .sbar3 {
+                    display: block;
+                    position: absolute; 
+                    align-items: center;
+                    background-color: #f8f9fa;
+                    border: 1px solid white;
+                    border-radius: 4px;
+                    box-shadow: 4px 4px 2px white;
+                    color: black;
+                    font-family: arial;
+                    font-size: 14px;
+                    margin-top: 250px;
+                    margin-bottom: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center; 
+                    padding: 3px;
+                    align: center;
+                }
+            </style>
+        </div>
+    </body>
+</html>
