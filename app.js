@@ -9,10 +9,10 @@ const HOST = '0.0.0.0'
 const app = express()
 
 // Serve static files from the "C:\Users\kakol\web tiket" directory
-app.use(express.static('C:\\Users\\kakol\\web tiket'))
+app.use(express.static(path.join(__dirname, '')))
 
 app.get('/', (req, res) => {
-    res.sendFile('ngetes.html', { root: 'C:\\Users\\kakol\\web tiket' })
+    res.sendFile('ngetes.html', { root: path.join(__dirname, '') })
 })
 
 app.listen(PORT, HOST)
