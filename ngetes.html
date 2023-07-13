@@ -7,22 +7,30 @@
     <body>
     <div class="masuk" style="flex-direction:column; position:relative; min-height: 30px;">
         <div class="form">
+        <center>
             <div class="hform" style="text-align: center; box-sizing:inherit">
                 <h2>Sign In</h2>
             </div>
             <div class="formbody">
                 <form class="sbarx" action="masuk.html">
-                        <input class="sbar1" role="combobox" type="text" placeholder="Username" autocomplete="off" name="p">
-                        <input class="sbar2" role="combobox" type="password" placeholder="Password" autocomplete="off" name="q"> 
+                        <input id="username" class="sbar1" role="combobox" type="text" placeholder="Username" autocomplete="off" name="p">
+                        <input id="password" class="sbar2" role="combobox" type="password" placeholder="Password" autocomplete="off" name="q"> 
                 </form>
             </div>
             <div class="tombol">
+                <div class="tombol2">
                 <button class="click" type="submit" value="login">
                     <span>Login</span>
                 </button>
+                </div>
             </div>
+        </center>
         </div>
     </div>  
+    <div class="bottom" style="font-size: smaller; text-align:center">Made by 
+        <strong>Caroline Panggabean</strong>
+    <br>
+    </div>
     </body>
     <style>
         
@@ -108,15 +116,15 @@
         }
         
         .tombol {
+            display: inline-block;
             margin-top: 20px;
             margin-bottom: 60px;
-            margin-left: 47%;
+            margin-left: auto;
             margin-right: auto;
-            align-items: center;
-         }
-        
+        }
+
         .click {
-            
+            position: relative;
             text-align: center;
             box-shadow: 2px 2px 1px rgb(253, 152, 11);
             border: rgb(247, 171, 64);
@@ -127,7 +135,6 @@
             font-size: 18px;
             background-color: rgb(247, 171, 64);
             margin-top: 40px;
-            position: absolute;
             width: 110px;
             font-family:'Segoe UI';
             font-weight: bold;
